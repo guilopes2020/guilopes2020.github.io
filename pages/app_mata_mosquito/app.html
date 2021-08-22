@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>App mata mosquito</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="../../assets/css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	
+		<link rel="stylesheet" href="estilo.css">
+	<script src="jogo.js"></script>
+</head>
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+	<div id="header">
+		<div class="container-header">
+			<a href="../../index.html" class="logo">
+				<img src="../../assets/images/perfil.png" alt="Logo">
+			</a>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="../../index.html">home</a></li>
+						<li><a href="../spotfy/spotfy.html">clone Spotfy</a></li>
+						<li><a href="finans.html">Finans</a></li>
+						<li><a href="../medicalcenter/medicalcenter.html">Medicenter</a></li>
+						<li><a href="../urna/urna.html">Urna</a></li>
+						<li><a href="../pizzaria2/pizza.html">Pizzaria</a></li>
+						<li><a href="mata_mosquito.html">App</a></li>
+						<li><a href="../calculadora/calc.html">Calculadora</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="button-menu-mobile">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="menu-mobile">
+				<nav>
+					<ul>
+						<li><a href="../../index.html">home</a></li>
+						<li><a href="../spotfy/spotfy.html">clone Spotfy</a></li>
+						<li><a href="../spotfy/spotfy.html">Finans</a></li>
+						<li><a href="../medicalcenter/medicalcenter.html">Medicenter</a></li>
+						<li><a href="../urna/urna.html">Urna</a></li>
+						<li><a href="../pizzaria2/pizza.html">Pizzaria</a></li>
+						<li><a href="mata_mosquito.html">App</a></li>
+						<li><a href="../calculadora/calc.html">Calculadora</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="index.html">home</a></li>
+						<li><a href="#about-us">about us</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#our-projects">our projects</a></li>
+						<li><a href="#our-team">our team</a></li>
+						<li><a href="#">happy clients</a></li>
+						<li><a href="#">price</a></li>
+						<li><a href="#">some facts</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="index.html">home</a></li>
+						<li><a href="#about-us">about us</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#our-projects">our projects</a></li>
+						<li><a href="#our-team">our team</a></li>
+						<li><a href="#">happy clients</a></li>
+						<li><a href="#">price</a></li>
+						<li><a href="#">some facts</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="index.html">home</a></li>
+						<li><a href="#about-us">about us</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#our-projects">our projects</a></li>
+						<li><a href="#our-team">our team</a></li>
+						<li><a href="#">happy clients</a></li>
+						<li><a href="#">price</a></li>
+						<li><a href="#">some facts</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="index.html">home</a></li>
+						<li><a href="#about-us">about us</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#our-projects">our projects</a></li>
+						<li><a href="#our-team">our team</a></li>
+						<li><a href="#">happy clients</a></li>
+						<li><a href="#">price</a></li>
+						<li><a href="#">some facts</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+				</nav>            
+			</div>
+		</div>
+	</div>
+
+	<div class="painel">
+		<div class="vidas">
+			<img id="v1" src="imagens/coracao_cheio.png">
+			<img id="v2" src="imagens/coracao_cheio.png">
+			<img id="v3" src="imagens/coracao_cheio.png">
+			<img id="v4" src="imagens/coracao_cheio.png">
+			<img id="v5" src="imagens/coracao_cheio.png">
+		</div>
+
+		<div class="cronometro">Tempo restante: <span id="cronometro"></span>
+			
+		</div>
+	</div>
+
+	<script>
+		document.getElementById('cronometro').innerHTML = tempo
+
+		var criaMosca = setInterval(function() {
+			posicaoRandomica()
+	}, criaMosquitoTempo)
+	</script>
+
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>

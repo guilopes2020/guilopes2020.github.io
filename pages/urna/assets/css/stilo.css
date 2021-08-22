@@ -1,0 +1,79 @@
+body {
+    margin:0;
+    font-family:sans-serif;
+}
+.urna-wrap {
+    display:flex;
+    justify-content:center;
+    margin-top: 120px;
+}
+.urna {
+    background-color:#dbd5c9;
+    padding:30px;
+    display:flex;
+}
+.tela {
+    width:500px;
+    height:320px;
+    background:linear-gradient(to right,#e8e8e8,#c1c1c1);
+    border:3px solid #555;
+    display:flex;
+    flex-direction:column;
+}
+.teclado {
+    background-color:#403a3a;
+    margin-left:30px;
+    padding:10px;
+    max-width:290px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.teclado ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.teclado ul li {
+    cursor:pointer;
+    background-color:#000;
+    color:#fff;
+    box-shadow:1px 1px 1px 1px #696868;
+    width:75px;
+    height:39px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+ul.teclas-numericas li {
+    margin:7px 10px;
+    font-size:1.2em;
+}
+ul.teclas {
+    display:flex;
+    align-items:flex-end;
+}
+ul.teclas li {
+    margin:5px;
+    font-size:.9em;
+    color:#000;
+}
+ul.teclas #btn-branco {
+    background-color:#fff; 
+}
+ul.teclas #btn-corrige {
+    background-color:#f09046;
+}
+ul.teclas #btn-confirma {
+    background-color:#48c079;
+    width:95px;
+    height:45px;
+}
+.display {
+    flex:1;
+    display:flex;
+}
+.display-esq{flex:1;padding-left:10px;display:flex;flex-direction:column}.desc{height:50px;display:flex;align-items:center}.cargo{height:50px;display:flex;align-items:center;justify-content:center}.numeros{height:50px;display:flex;align-items:center;justify-content:center}.numeros ul{list-style:none;margin:0;padding:0;display:flex}.numeros ul li{border:1px solid #000;margin:5px;width:30px;height:40px;display:flex;justify-content:center;align-items:center;font-size:2.3em}.pisca{animation-name:pisca;animation-duration:1s;animation-iteration-count:infinite}@keyframes pisca{0%{opacity:.2}50%{opacity:1}100%{opacity:.2}}.info{flex:1;display:flex;align-items:center}.display-dir{width:90px;display:flex;flex-direction:column;align-items:flex-end}.display-dir span{background-color:#fff;width:100%;text-align:center;border:1px solid #000}.display-dir .small{font-size:.7rem;width:85%}.display-dir .candidato{display:flex;flex-direction:column;align-items:flex-end;margin:5px 0}.display-dir .candidato img{width:100%;border:1px solid #000;border-bottom:none}.instrucoes{height:50px;border-top:2px solid #000;font-size:.9em;padding-left:5px}.lista-candidatos{display:flex;flex-direction:column;align-items:center}.lista-candidatos table{margin-top:15px;margin-bottom:5px;border-collapse:collapse}.lista-candidatos table th.cab-cargo{background-color:#5f5f5f}.lista-candidatos table th{padding:5px 15px;background-color:#333;color:#fff}.lista-candidatos table tr{border-bottom:1px solid #000}.lista-candidatos table td{padding:5px 15px;text-align:left}.aviso-grande{font-size:2.5em;font-weight:700}.aviso-gigante{display:flex;flex:1;justify-content:center;align-items:center;font-size:4em;font-weight:700}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .line {
+    background-color: #117050;
+    height: 10px;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+header .header--area {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+header .header--area .header--left img {
+    width: 64px;
+    height: 64px;
+    transition: 0.5s;
+}
+
+header .header--area .header--left img:hover {
+    transform: scale(1.2);
+}
+
+header .header--area .header--right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header--area .header--right form {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid gray;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
+
+}
+
+header .header--area .header--right input {
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 37px;
+    border-radius: 20px;
+    transition: all linear 0.6s;
+}
+
+header .header--area .header--right button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+header .header--area .header--right button img {
+    width: 25%;
+    margin-right: 20px;
+}
+
+header .header--area .header--right input::placeholder {
+    font-size: 18px;
+    color: gray;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+header .header--area .header--right input:enabled {
+    font-size: 18px;
+    color: gray;
+    padding: 15px;
+}
+
+header .header--area .header--right input:focus {
+    width: 350px;
+}
+
+header .header--area .header--right .menu--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    position: absolute;
+}
+
+#check:checked ~ .menu {
+    transform: translateY(610px);
+}
+
+#check:checked ~ .menu ul li a {
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+header .header--area .header--right .menu--mobile img {
+    width: 65%;
+}
+
+header .menu {
+    position: absolute;
+    right: 15px !important;
+    top: -520px !important;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.863);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    transition: all linear 0.7s;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+header .menu ul li {
+    display: block;
+    text-decoration: none;
+    
+}
+
+header .menu ul li:hover {
+    border-bottom: 2px solid white;
+}
+
+header .menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+    opacity: 0;
+    transition: all linear 0.7s;
+}
+
+header .menu ul li a:hover {
+    color: green;
+}
+
+#banner {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.containt-banner {
+    width: 40vw;
+    margin: 0;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.containt-banner h1 {
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 7rem;
+}
+
+.containt-banner h4 {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.664);
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+.containt-banner .images-containt-banner {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containt-banner .images-containt-banner img {
+    width: 30%;
+    border-radius: 50%;
+    border: 6px solid rgba(2, 85, 2, 0.767);
+    transition: all linear 0.7s;
+    box-shadow: -5px 7px 10px rgba(0, 0, 0, 0.555);
+}
+
+.containt-banner .images-containt-banner img:hover {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.753);
+}
