@@ -53,6 +53,10 @@
     transform: scale(1.2);
 }
 
+.cabecalho {
+    position: relative !important;	
+}
+
 #header {
     height: 100px;
     width: 100vw;
