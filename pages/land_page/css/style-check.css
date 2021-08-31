@@ -127,6 +127,11 @@ main section:nth-of-type(1) {
     margin: 10px 0;
 }
 
+.dataAtual {
+    font-size: 700;
+    color: rgba(255, 255, 255, 0.897);
+}
+
 .container-check .titles span {
     font-size: 1em;
     margin-bottom: 10px;
