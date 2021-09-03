@@ -1,71 +1,18 @@
-document.querySelector('.section-8 .perguntas .title1').addEventListener('click', () => {
-    if (document.querySelector('.p1').style.display == 'block') {
-        document.querySelector('.p1').style.display = 'none'
-        document.querySelector('.icon-1').classList.remove('fa-angle-down')
-        document.querySelector('.icon-1').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p1').style.display = 'block'
-        document.querySelector('.icon-1').classList.remove('fa-angle-right')
-        document.querySelector('.icon-1').classList.add('fa-angle-down')
-    }
-})
-
-document.querySelector('.section-8 .perguntas .title2').addEventListener('click', () => {
-    if (document.querySelector('.p2').style.display == 'block') {
-        document.querySelector('.p2').style.display = 'none'
-        document.querySelector('.icon-2').classList.remove('fa-angle-down')
-        document.querySelector('.icon-2').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p2').style.display = 'block'
-        document.querySelector('.icon-2').classList.remove('fa-angle-right')
-        document.querySelector('.icon-2').classList.add('fa-angle-down')
-    }
-})
-
-document.querySelector('.section-8 .perguntas .title3').addEventListener('click', () => {
-    if (document.querySelector('.p3').style.display == 'block') {
-        document.querySelector('.p3').style.display = 'none'
-        document.querySelector('.icon-3').classList.remove('fa-angle-down')
-        document.querySelector('.icon-3').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p3').style.display = 'block'
-        document.querySelector('.icon-3').classList.remove('fa-angle-right')
-        document.querySelector('.icon-3').classList.add('fa-angle-down')
-    }
-})
-
-document.querySelector('.section-8 .perguntas .title4').addEventListener('click', () => {
-    if (document.querySelector('.p4').style.display == 'block') {
-        document.querySelector('.p4').style.display = 'none'
-        document.querySelector('.icon-4').classList.remove('fa-angle-down')
-        document.querySelector('.icon-4').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p4').style.display = 'block'
-        document.querySelector('.icon-4').classList.remove('fa-angle-right')
-        document.querySelector('.icon-4').classList.add('fa-angle-down')
-    }
-})
-
-document.querySelector('.section-8 .perguntas .title5').addEventListener('click', () => {
-    if (document.querySelector('.p5').style.display == 'block') {
-        document.querySelector('.p5').style.display = 'none'
-        document.querySelector('.icon-5').classList.remove('fa-angle-down')
-        document.querySelector('.icon-5').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p5').style.display = 'block'
-        document.querySelector('.icon-5').classList.remove('fa-angle-right')
-        document.querySelector('.icon-5').classList.add('fa-angle-down')
-    }
-})
-
-document.querySelector('.section-8 .perguntas .title6').addEventListener('click', () => {
-    if (document.querySelector('.p6').style.display == 'block') {
-        document.querySelector('.p6').style.display = 'none'
-        document.querySelector('.icon-6').classList.remove('fa-angle-down')
-        document.querySelector('.icon-6').classList.add('fa-angle-right')
-    } else {
-        document.querySelector('.p6').style.display = 'block'
-        document.querySelector('.icon-6').classList.remove('fa-angle-right')
-        document.querySelector('.icon-6').classList.add('fa-angle-down')
-    }
-})
+if (document.querySelector('.section-8 .perguntas .title')) {
+    document.querySelectorAll('.section-8 .perguntas .title').forEach(item => {
+        item.addEventListener('click', () => {
+            if (item.querySelector('.fas').classList.contains('fa-angle-right')) {
+                item.querySelector('.fas').classList.remove('fa-angle-right');
+                item.querySelector('.fas').classList.add('fa-angle-down');
+            } else {
+                item.querySelector('.fas').classList.remove('fa-angle-down');
+                item.querySelector('.fas').classList.add('fa-angle-right');
+            }
+            if (item.querySelector('.resposta').classList.contains('active') === false) {
+                item.querySelector('.resposta').classList.add('active')
+            } else {
+                item.querySelector('.resposta').classList.remove('active')
+            }
+        });
+    });
+}

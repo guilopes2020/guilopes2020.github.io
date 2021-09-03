@@ -626,12 +626,8 @@ main section:nth-of-type(8) {
     cursor: pointer;
 }
 
-.section-8 .perguntas p {
-    margin-bottom: 15px;
-}
-
 .section-8 .perguntas .title {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .section-8 .perguntas .title span {
@@ -644,15 +640,17 @@ main section:nth-of-type(8) {
     font-weight: 600;
 }
 
-.section-8 .perguntas p {
+.section-8 .perguntas .title p {
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.550);
     line-height: 1.2em;
     margin-left: 15px;
+    margin-top: 10px;
+    display: none;
 }
 
-.section-8 .perguntas .p1, .section-8 .perguntas .p2, .section-8 .perguntas .p3, .section-8 .perguntas .p4, .section-8 .perguntas .p5, .section-8 .perguntas .p6 {
-    display: none;
+.section-8 .perguntas .title .active {
+    display: block !important;
 }
 
 main section:nth-of-type(9) {
