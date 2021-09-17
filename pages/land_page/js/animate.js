@@ -1,4 +1,4 @@
-function debounce(func, wait, immediate) {
+/*function debounce(func, wait, immediate) {
     var timeout;
     return function () {
         var context = this,
@@ -35,4 +35,4 @@ if (target.length) {
     window.addEventListener('scroll', debounce(function () {
         animeScroll();
     }, 200))
-}
+}*/
