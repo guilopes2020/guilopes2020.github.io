@@ -7,3 +7,4 @@ document.querySelector('.button-menu-mobile').addEventListener('click', () => {
         document.querySelector('.menu-mobile ul').style.opacity = 1
     }
 })
+
