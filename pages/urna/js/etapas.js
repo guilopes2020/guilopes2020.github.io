@@ -4,73 +4,71 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: 38111,
+                numero: '38111',
                 nome: 'Fulano de Tal',
                 partido: 'ABC',
                 fotos: [
                     {
-                        url: 'candidato.jpg',
+                        url: '38111.jpg',
                         legenda: 'Vereador',
                         small: false
                     }
                 ]
             },
+
             {
-                numero: 77222,
+                numero: '77222',
                 nome: 'Beltrano da Silva',
                 partido: 'DEFG',
                 fotos: [
                     {
-                        url: 'candidato.jpg',
-                        legenda: 'Vereador',
-                        small: false
+                        url: '77222.jpg',
+                        legenda: 'Vereador'
                     }
                 ]
-            }
+            },
         ]
     },
+
     {
         titulo: 'PREFEITO',
         numeros: 2,
         candidatos: [
             {
-                numero: 99,
+                numero: '99',
                 nome: 'Ciclano',
                 partido: 'ABC',
                 vice: 'Cic',
-                viceTitulo: 'Vice-Prefeito',
                 fotos: [
                     {
-                        url: 'candidato.jpg',
-                        legenda: 'Prefeito',
-                        small: false
+                        url: '99.jpg',
+                        legenda: 'Prefeito'
                     },
                     {
-                        url: 'candidato.jpg',
+                        url: '99_2.jpg',
                         legenda: 'Vice-Prefeito',
                         small: true
                     }
                 ]
             },
+
             {
                 numero: 84,
                 nome: 'Zulano',
-                partido: 'QWERTY',
+                partido: 'QUERTY',
                 vice: 'Zul',
-                viceTitulo: 'Vice-Prefeito',
                 fotos: [
                     {
-                        url: 'candidato.jpg',
-                        legenda: 'Prefeito',
-                        small: false
+                        url: '84.jpg',
+                        legenda: 'Prefeito'
                     },
                     {
-                        url: 'candidato.jpg',
+                        url: '84_2.jpg',
                         legenda: 'Vice-Prefeito',
                         small: true
                     }
                 ]
-            }
+            },
         ]
     }
-];
+]

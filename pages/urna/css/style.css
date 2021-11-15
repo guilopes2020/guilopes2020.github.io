@@ -1,0 +1,195 @@
+@keyframes pisca {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urna {
+    background-color: #DBD5C9;
+    margin: 150px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    min-width: 270px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+}
+
+.tela {
+    width: 55%;
+    min-width: 200px;
+    height: 95%;
+    min-height: 300px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+}
+
+.tela .div1 {
+    flex: 3;
+    display: flex;
+}
+
+.tela .div1 .div1--left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tela .div1 .div1--left h3 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+.tela .div1 .div1--left h2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.tela .div1 .div1--left .dig-candit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tela .div1 .div1--left .dig-candit .numero {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555;
+    font-weight: 700;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.tela .div1 .div1--left .descr-candit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 5px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tela .div1 .div1--left .descr-candit h3 {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.tela .div1 .div1--right {
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tela .div1 .div1--right .d-1-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela .div1 .div1--right .d-1-image img {
+    width: 90%;
+    min-width: 70px;
+}
+
+.tela .div2 {
+    flex: 1;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    padding-left: 5px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.teclado {
+    width: 35%;
+    min-width: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.589);
+    background-color: rgb(39, 31, 27);
+    border-radius: 5px;
+}
+
+.teclado .teclado--linha {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.teclado .teclado--linha .teclado--botao {
+    width: 50px;
+    height: 30px;
+    background-color: #000;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.teclado--botao.btn--branco {
+    background-color: white !important;
+    color: black !important;
+    font-size: 15px !important;
+    padding: 5px;
+}
+
+.teclado--botao.btn--corrige {
+    background-color: #F09046 !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    padding: 5px;
+}
+
+.teclado--botao.btn--confirma {
+    background-color: #48C079 !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    width: 90px !important;
+    height: 50px !important;
+    padding: 5px;
+}
+
